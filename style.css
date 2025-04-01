@@ -1,9 +1,7 @@
-/* Smooth scrolling */
 html {
     scroll-behavior: smooth;
   }
   
-  /* Fade-in sections */
   section {
     opacity: 0;
     transform: translateY(20px);
@@ -14,7 +12,6 @@ html {
     transform: translateY(0);
   }
   
-  /* Bubble background that spans the entire page */
   .bubble-background {
     position: fixed;
     top: 0;
@@ -26,15 +23,13 @@ html {
     z-index: -1;
   }
   
-  /* Bubbles in different sizes, drifting around in multiple directions */
   .bubble {
     position: absolute;
     border-radius: 50%;
-    background: rgba(30, 144, 255, 0.2); /* A lightish sky-blue */
+    background: rgba(30, 144, 255, 0.2);
     animation: bubbleFly 12s infinite ease-in-out;
   }
   
-  /* Adjust bubble sizes and positions as desired */
   .bubble1 {
     width: 80px; height: 80px;
     top: 10%; left: 20%;
@@ -99,7 +94,6 @@ html {
     }
   }
   
-  /* Remove default background from sections so the gradient and bubbles show */
   section {
     background: transparent;
   }
