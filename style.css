@@ -70,7 +70,28 @@ html {
     top: 55%; left: 5%;
     animation-delay: 7s;
   }
-  
+  .bubble9 {
+    width: 50px; height: 50px;
+    top: 10%; left: 30%;
+    animation-delay: 5s;
+  }
+  .bubble10 {
+    width: 90px; height: 90px;
+    top: 15%; left: 45%;
+    animation-delay: 6s;
+  }
+  .bubble11 {
+    width: 90px; height: 90px;
+    top: 65%; left: 85%;
+    animation-delay: 3s;
+  }
+  .bubble12 {
+    width: 90px; height: 90px;
+    top: 80%; left: 70%;
+    animation-delay: 1s;
+  }
+
+
   @keyframes bubbleFly {
     0% {
       transform: translate(0, 0) scale(1);
