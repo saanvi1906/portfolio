@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+
   const sections = document.querySelectorAll("section");
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -15,5 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   menuBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
+  });
+
+  const mobileLinks = mobileMenu.querySelectorAll("a");
+  mobileLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+    });
   });
 });
