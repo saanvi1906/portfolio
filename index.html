@@ -37,7 +37,7 @@
       <!-- Logo/Name -->
       <div class="text-3xl font-bold">Saanvi Patel</div>
 
-      <!-- Hamburger Button (hidden on md and up) -->
+      <!-- Hamburger Button (visible on mobile only) -->
       <button 
         id="menu-btn" 
         class="block md:hidden focus:outline-none"
@@ -53,8 +53,8 @@
         </svg>
       </button>
 
-      <!-- Desktop Nav Links (hidden on mobile) -->
-      <ul id="menu" class="hidden md:flex space-x-6 text-lg font-medium">
+      <!-- Desktop Nav Links (visible on md and up) -->
+      <ul class="hidden md:flex space-x-6 text-lg font-medium">
         <li><a href="#home" class="hover:text-blue-300 transition">Home</a></li>
         <li><a href="#about" class="hover:text-blue-300 transition">About</a></li>
         <li><a href="#education" class="hover:text-blue-300 transition">Education</a></li>
@@ -66,7 +66,7 @@
       </ul>
     </div>
 
-    <!-- Mobile Nav (shown when hamburger is clicked) -->
+    <!-- Mobile Nav (dropdown, hidden on md and up) -->
     <div id="mobile-menu" class="hidden md:hidden bg-gray-800 bg-opacity-95 text-white px-8 pb-4">
       <ul class="space-y-4 pt-4 text-lg font-medium">
         <li><a href="#home" class="hover:text-blue-300 block">Home</a></li>
