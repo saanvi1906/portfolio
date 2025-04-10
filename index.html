@@ -6,13 +6,16 @@
   <title>Saanvi Patel | Portfolio</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
-  <!-- Tailwind CSS CDN -->
+  <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
-<body class="relative overflow-x-hidden bg-gradient-to-r from-blue-100 to-pink-100" style="font-family: 'Poppins', sans-serif;">
+<body 
+  class="relative min-h-screen bg-gradient-to-r from-blue-100 to-pink-100 bg-fixed bg-cover bg-no-repeat overflow-x-hidden" 
+  style="font-family: 'Poppins', sans-serif;"
+>
 
-  <!-- Floating Bubble Background -->
+  <!-- Bubble Background -->
   <div class="bubble-background">
     <div class="bubble bubble1"></div>
     <div class="bubble bubble2"></div>
@@ -28,47 +31,93 @@
     <div class="bubble bubble12"></div>
   </div>
 
-  <!-- Navigation Bar -->
+  <!-- Navbar -->
   <nav class="fixed top-0 w-full bg-gray-900 bg-opacity-90 text-white z-50">
     <div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
+      <!-- Logo/Name -->
       <div class="text-3xl font-bold">Saanvi Patel</div>
-      <ul class="flex space-x-6 text-lg font-medium">
+
+      <!-- Hamburger Button (hidden on md and up) -->
+      <button 
+        id="menu-btn" 
+        class="block md:hidden focus:outline-none"
+        aria-label="Toggle mobile menu"
+      >
+        <svg
+          class="w-8 h-8 text-white hover:text-blue-300 transition"
+          fill="none" stroke="currentColor" stroke-width="2" 
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Desktop Nav Links (hidden on mobile) -->
+      <ul id="menu" class="hidden md:flex space-x-6 text-lg font-medium">
         <li><a href="#home" class="hover:text-blue-300 transition">Home</a></li>
         <li><a href="#about" class="hover:text-blue-300 transition">About</a></li>
         <li><a href="#education" class="hover:text-blue-300 transition">Education</a></li>
         <li><a href="#skills" class="hover:text-blue-300 transition">Skills</a></li>
         <li><a href="#projects" class="hover:text-blue-300 transition">Projects</a></li>
-        <li><a href="#experience" class="hover:text-blue-300 transition">Experience</a></li>
+        <li><a href="#experience" class="hover:text-blue-300 transition">Work Experience</a></li>
         <li><a href="#extracurricular" class="hover:text-blue-300 transition">Extracurricular</a></li>
         <li><a href="#contact" class="hover:text-blue-300 transition">Contact</a></li>
       </ul>
     </div>
+
+    <!-- Mobile Nav (shown when hamburger is clicked) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800 bg-opacity-95 text-white px-8 pb-4">
+      <ul class="space-y-4 pt-4 text-lg font-medium">
+        <li><a href="#home" class="hover:text-blue-300 block">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-300 block">About</a></li>
+        <li><a href="#education" class="hover:text-blue-300 block">Education</a></li>
+        <li><a href="#skills" class="hover:text-blue-300 block">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-300 block">Projects</a></li>
+        <li><a href="#experience" class="hover:text-blue-300 block">Work Experience</a></li>
+        <li><a href="#extracurricular" class="hover:text-blue-300 block">Extracurricular</a></li>
+        <li><a href="#contact" class="hover:text-blue-300 block">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section id="home" class="min-h-screen flex flex-col items-center justify-center pt-24 pb-12 text-center px-6">
-    <img src="profile.jpg" alt="Saanvi Patel" class="w-80 h-80 rounded-full border-8 border-blue-300 shadow-2xl object-cover mx-auto mb-8"/>
+    <img 
+      src="profile.jpg" 
+      alt="Saanvi Patel" 
+      class="w-80 h-80 rounded-full border-8 border-blue-300 shadow-2xl object-cover mx-auto mb-8"
+    />
     <h1 class="text-6xl font-bold mb-4 text-gray-800">Hello, I'm Saanvi</h1>
     <h2 class="text-3xl text-gray-700 mb-4">Software Engineer &amp; Developer</h2>
     <p class="max-w-3xl mx-auto text-xl text-gray-700 leading-relaxed">
-      I design and build secure, scalable, and creative software solutions. Currently pursuing a B.S. in Computer Science at Arizona State University, I love tackling complex challenges with innovative code.
+      I design and build secure, scalable, and creative software solutions. 
+      Currently pursuing a B.S. in Computer Science at Arizona State University, 
+      I love tackling complex challenges with innovative code. My focus is on blending 
+      a strong technical foundation with a user-friendly experience.
     </p>
     <div class="mt-6">
-      <a href="resume.pdf" target="_blank" class="px-10 py-3 bg-blue-500 text-white rounded-full shadow-xl hover:bg-blue-600 transition duration-300 text-xl font-semibold">
+      <a 
+        href="resume.pdf" target="_blank" 
+        class="px-10 py-3 bg-blue-500 text-white rounded-full shadow-xl hover:bg-blue-600 transition duration-300 text-xl font-semibold"
+      >
         View Resume
       </a>
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About -->
   <section id="about" class="py-24 px-8 text-center">
     <h2 class="text-6xl font-bold mb-8 text-gray-800">About Me</h2>
     <p class="max-w-4xl mx-auto text-2xl text-gray-700 leading-relaxed">
-        I'm a passionate Computer Science student with a keen interest in full‑stack development, automated testing, and system security. I thrive on learning new technologies, collaborating with teams, and turning complex problems into intuitive, scalable solutions. My goal is to create software that not only performs seamlessly but also provides a delightful user experience.
+      I'm a passionate Computer Science student with a keen interest in full‑stack development, 
+      automated testing, and system security. I thrive on learning new technologies, collaborating with 
+      teams, and turning complex problems into intuitive, scalable solutions. My goal is to create 
+      software that not only performs seamlessly but also provides a delightful user experience.
     </p>
   </section>
 
-  <!-- Education Section -->
+  <!-- Education -->
   <section id="education" class="py-24 px-8 text-center">
     <h2 class="text-6xl font-bold mb-8 text-gray-800">Education</h2>
     <div class="max-w-3xl mx-auto text-left text-gray-700 text-2xl">
@@ -76,49 +125,55 @@
       <p class="text-blue-600 mt-2">Arizona State University, Tempe, AZ | August 2022 - May 2026</p>
       <p class="mt-2">GPA: 3.90</p>
       <p class="mt-6 leading-relaxed">
-        Relevant Coursework: Data Structures &amp; Algorithms, Software Engineering, Programming Languages, Operating Systems, Software QA &amp; Testing, Mobile App Development
+        Relevant Coursework: Data Structures &amp; Algorithms, Software Engineering, Programming Languages, 
+        Operating Systems, Software QA &amp; Testing, Mobile App Development
       </p>
     </div>
   </section>
 
-  <!-- Skills Section -->
+  <!-- Skills (8 Cards) -->
   <section id="skills" class="py-24 px-8 text-center">
     <h2 class="text-6xl font-bold mb-12 text-gray-800">Technical Skills</h2>
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 max-w-6xl mx-auto">
-      <!-- Skill: Java -->
+      <!-- Card 1: Java -->
       <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all">
         <img src="java.svg" alt="Java" class="w-16 h-16 mx-auto"/>
         <p class="mt-4 text-xl font-semibold text-gray-700">Java</p>
       </div>
-      <!-- Skill: Python -->
+      <!-- Card 2: Python -->
       <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all">
         <img src="python.svg" alt="Python" class="w-16 h-16 mx-auto"/>
         <p class="mt-4 text-xl font-semibold text-gray-700">Python</p>
       </div>
-      <!-- Skill: JavaScript -->
+      <!-- Card 3: JavaScript -->
       <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all">
         <img src="javascript.svg" alt="JavaScript" class="w-16 h-16 mx-auto"/>
         <p class="mt-4 text-xl font-semibold text-gray-700">JavaScript</p>
       </div>
-      <!-- Skill: React -->
+      <!-- Card 4: React -->
       <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all">
         <img src="react.svg" alt="React" class="w-16 h-16 mx-auto"/>
         <p class="mt-4 text-xl font-semibold text-gray-700">React</p>
       </div>
-      <!-- Skill: Swift -->
+      <!-- Card 5: Swift -->
       <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all">
         <img src="swift.svg" alt="Swift" class="w-16 h-16 mx-auto"/>
         <p class="mt-4 text-xl font-semibold text-gray-700">Swift</p>
       </div>
-      <!-- Skill: SQL -->
+      <!-- Card 6: SQL -->
       <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all">
         <img src="sql.svg" alt="SQL" class="w-16 h-16 mx-auto"/>
         <p class="mt-4 text-xl font-semibold text-gray-700">SQL</p>
       </div>
-      <!-- Skill: AWS -->
+      <!-- Card 7: AWS -->
       <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all">
         <img src="aws.svg" alt="AWS" class="w-16 h-16 mx-auto"/>
         <p class="mt-4 text-xl font-semibold text-gray-700">AWS</p>
+      </div>
+      <!-- Card X: C# (Example) -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all">
+        <img src="csharp.svg" alt="C#" class="w-16 h-16 mx-auto"/>
+        <p class="mt-4 text-xl font-semibold text-gray-700">C#</p>
       </div>
     </div>
   </section>
@@ -127,43 +182,44 @@
   <section id="projects" class="py-24 px-8 text-center">
     <h2 class="text-6xl font-bold mb-12 text-gray-800">Projects</h2>
     <div class="grid xl:grid-cols-4 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
-      <!-- Project 1 -->
+      <!-- Project 1: Contact Management System -->
       <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all text-left">
         <h3 class="text-3xl font-semibold mb-4 text-blue-700">Contact Management System</h3>
-        <ul class="list-disc list-inside space-y-1 text-lg text-gray-700">
-          <li>Python desktop app using Tkinter &amp; SQLite.</li>
-          <li>Manage 500+ contacts with full CRUD, search, and filtering.</li>
-          <li>Optimized queries improved data retrieval speed by 40%.</li>
+        <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+          <li>Python desktop app using Tkinter &amp; SQLite</li>
+          <li>Manage 500+ contacts with full CRUD operations</li>
+          <li>Advanced search &amp; filtering features</li>
+          <li>Optimized queries improved data retrieval speed by 40%</li>
         </ul>
         <p class="mt-4 font-medium">Technologies: Python, SQLite, Tkinter</p>
       </div>
-      <!-- Project 2 -->
+      <!-- Project 2: Heart Health Imaging System -->
       <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all text-left">
         <h3 class="text-3xl font-semibold mb-4 text-blue-700">Heart Health Imaging System</h3>
-        <ul class="list-disc list-inside space-y-1 text-lg text-gray-700">
-          <li>Java application with JavaFX-based UI.</li>
-          <li>Reduced data entry errors by 25% via UML-driven design.</li>
-          <li>Secure, role-based patient data access with robust permissions.</li>
+        <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+          <li>Java application with JavaFX-based UI</li>
+          <li>UML-driven design reduced data entry errors by 25%</li>
+          <li>Secure, role-based patient data access</li>
         </ul>
         <p class="mt-4 font-medium">Technologies: Java, JavaFX, UML</p>
       </div>
-      <!-- Project 3 -->
+      <!-- Project 3: ASU Chirp – Social Media App -->
       <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all text-left">
-        <h3 class="text-3xl font-semibold mb-4 text-blue-700">Travel Journal App</h3>
-        <ul class="list-disc list-inside space-y-1 text-lg text-gray-700">
-          <li>iOS app built with SwiftUI &amp; MVVM architecture.</li>
-          <li>Integrated MapKit for real-time location search.</li>
-          <li>Reduced navigation time by 35% with an intuitive UI.</li>
+        <h3 class="text-3xl font-semibold mb-4 text-blue-700">ASU Chirp – Social Media App</h3>
+        <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+          <li>SwiftUI app for students to share posts, events, and updates</li>
+          <li>Real-time Firestore sync with Firebase Authentication</li>
+          <li>MVVM architecture improved UI responsiveness by 40%</li>
         </ul>
-        <p class="mt-4 font-medium">Technologies: Swift, SwiftUI, MVVM, MapKit</p>
+        <p class="mt-4 font-medium">Technologies: SwiftUI, Firebase, MVVM</p>
       </div>
-      <!-- Project 4 -->
+      <!-- Project 4: Software Testing & QA -->
       <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all text-left">
         <h3 class="text-3xl font-semibold mb-4 text-blue-700">Software Testing &amp; QA</h3>
-        <ul class="list-disc list-inside space-y-1 text-lg text-gray-700">
-          <li>JUnit &amp; Selenium-based automated testing (200+ test cases).</li>
-          <li>90% test coverage, reducing vulnerabilities by 30%.</li>
-          <li>CI/CD pipeline slashed manual testing time by 50%.</li>
+        <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+          <li>JUnit &amp; Selenium-based automated testing (200+ test cases)</li>
+          <li>Achieved 90% test coverage, reducing vulnerabilities by 30%</li>
+          <li>CI/CD pipeline slashed manual testing time by 50%</li>
         </ul>
         <p class="mt-4 font-medium">Technologies: JUnit, Selenium, CI/CD</p>
       </div>
@@ -188,7 +244,7 @@
     </div>
   </section>
 
-  <!-- Extracurricular Section (3 columns for each item on large screens) -->
+  <!-- Extracurricular Section -->
   <section id="extracurricular" class="py-24 px-8 text-center">
     <h2 class="text-6xl font-bold mb-12 text-gray-800">Extracurricular</h2>
     <div class="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto text-left text-xl text-gray-700">
@@ -222,21 +278,21 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-24 px-8 text-center">
-    <h2 class="text-6xl font-bold mb-12 text-gray-800">Contact Me</h2>
-    <p class="text-2xl mb-8 max-w-2xl mx-auto leading-relaxed text-gray-700">
-      I'm always excited to discuss new opportunities, collaborations, or ideas about technology. Let's connect!
-    </p>
-    <div class="space-x-6">
-      <a href="mailto:saanvip19.cs@gmail.com" class="px-10 py-3 bg-blue-500 text-xl rounded-full shadow hover:bg-blue-600 transition">
-        Email Me
-      </a>
-      <a href="https://linkedin.com/in/saanvi-patel-a830862b0" target="_blank" class="px-10 py-3 bg-blue-500 text-xl rounded-full shadow hover:bg-blue-600 transition">
-        LinkedIn
-      </a>
-    </div>
-  </section>
+<!-- Contact Section -->
+<section id="contact" class="py-24 px-8 text-center">
+  <h2 class="text-6xl font-bold mb-12 text-gray-800">Contact Me</h2>
+  <p class="text-2xl mb-8 max-w-2xl mx-auto leading-relaxed text-gray-700">
+    I'm always excited to discuss new opportunities, collaborations, or ideas about technology. Let's connect!
+  </p>
+  <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+    <a href="mailto:saanvip19.cs@gmail.com" class="px-10 py-3 bg-blue-500 text-xl rounded-full shadow hover:bg-blue-600 transition">
+      Email Me
+    </a>
+    <a href="https://linkedin.com/in/saanvi-patel-a830862b0" target="_blank" class="px-10 py-3 bg-blue-500 text-xl rounded-full shadow hover:bg-blue-600 transition">
+      LinkedIn
+    </a>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="py-8 text-center">
