@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saanvi Patel | Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body 
+  class="relative min-h-screen bg-gradient-to-r from-blue-100 to-pink-100 bg-fixed bg-cover bg-no-repeat overflow-x-hidden" 
+  style="font-family: 'Poppins', sans-serif;"
+>
+
+  <!-- Bubble Background -->
+  <div class="bubble-background">
+    <div class="bubble bubble1"></div>
+    <div class="bubble bubble2"></div>
+    <div class="bubble bubble3"></div>
+    <div class="bubble bubble4"></div>
+    <div class="bubble bubble5"></div>
+    <div class="bubble bubble6"></div>
+    <div class="bubble bubble7"></div>
+    <div class="bubble bubble8"></div>
+    <div class="bubble bubble9"></div>
+    <div class="bubble bubble10"></div>
+    <div class="bubble bubble11"></div>
+    <div class="bubble bubble12"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-gray-900 bg-opacity-90 text-white z-50">
+    <div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
+      <!-- Logo/Name -->
+      <div class="text-3xl font-bold">Saanvi Patel</div>
+
+      <!-- Hamburger Button (visible on mobile only) -->
+      <button 
+        id="menu-btn" 
+        class="block md:hidden focus:outline-none"
+        aria-label="Toggle mobile menu"
+      >
+        <svg
+          class="w-8 h-8 text-white hover:text-blue-300 transition"
+          fill="none" stroke="currentColor" stroke-width="2" 
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Desktop Nav Links (visible on md and up) -->
+      <ul class="hidden md:flex space-x-6 text-lg font-medium">
+        <li><a href="#home" class="hover:text-blue-300 transition">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-300 transition">About</a></li>
+        <li><a href="#education" class="hover:text-blue-300 transition">Education</a></li>
+        <li><a href="#skills" class="hover:text-blue-300 transition">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-300 transition">Projects</a></li>
+        <li><a href="#experience" class="hover:text-blue-300 transition">Work Experience</a></li>
+        <li><a href="#extracurricular" class="hover:text-blue-300 transition">Extracurricular</a></li>
+        <li><a href="#contact" class="hover:text-blue-300 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Mobile Nav (dropdown, hidden on md and up) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800 bg-opacity-95 text-white px-8 pb-4">
+      <ul class="space-y-4 pt-4 text-lg font-medium">
+        <li><a href="#home" class="hover:text-blue-300 block">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-300 block">About</a></li>
+        <li><a href="#education" class="hover:text-blue-300 block">Education</a></li>
+        <li><a href="#skills" class="hover:text-blue-300 block">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-300 block">Projects</a></li>
+        <li><a href="#experience" class="hover:text-blue-300 block">Work Experience</a></li>
+        <li><a href="#extracurricular" class="hover:text-blue-300 block">Extracurricular</a></li>
+        <li><a href="#contact" class="hover:text-blue-300 block">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="min-h-screen flex flex-col items-center justify-center pt-24 pb-12 text-center px-6">
+    <img 
+      src="profile.jpg" 
+      alt="Saanvi Patel" 
+      class="w-80 h-80 rounded-full border-8 border-blue-300 shadow-2xl object-cover mx-auto mb-8"
+    />
+    <h1 class="text-5 xl font-bold mb-4 text-gray-800">Hi, I am Saanvi Patel</h1>
+    <h2 class="text-3xl text-gray-700 mb-4">Software Engineer | Backend Systems | Data & AI Applications</h2>
+    <p class="max-w-3xl mx-auto text-xl text-gray-700 leading-relaxed">
+    Computer Science student at Arizona State University with experience building backend systems,
+    AI-powered applications, and scalable data-driven platforms. I enjoy solving complex problems by
+    combining strong software engineering fundamentals with practical system design.
+    </p>
+    <p class="mt-4 text-lg text-gray-600 font-medium">
+Former Software Development Intern at GSK • Arizona State University • 3.98 GPA
+</p>
+    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+      <a 
+        href="resume.pdf" target="_blank" 
+        class="px-10 py-3 bg-blue-500 text-white rounded-full shadow-xl hover:bg-blue-600 transition duration-300 text-xl font-semibold"
+      >
+        View Resume
+      </a>
+      
+    </div>
+  </section>   
+
+  <!-- About -->
+  <section id="about" class="py-24 px-8 text-center">
+  <h2 class="text-6xl font-bold mb-8 text-gray-800">About Me</h2>
+  <p class="max-w-4xl mx-auto text-2xl text-gray-700 leading-relaxed">
+    I am a Computer Science student at Arizona State University with a strong interest in backend development,
+    AI-powered systems, and building software that solves real operational problems. My experience spans
+    enterprise monitoring platforms, real-time backend services, recommendation engines, and user-focused
+    applications. I enjoy combining technical depth with practical thinking to create scalable systems that
+    improve workflows, support better decisions, and deliver meaningful user impact.
+  </p>
+</section>
+
+  <!-- Education -->
+  <section id="education" class="py-24 px-8">
+    <h2 class="text-6xl font-bold text-center mb-12 text-gray-800">Education</h2>
+
+    <div class="max-w-5xl mx-auto bg-white rounded-3xl shadow-lg p-10">
+      <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+        <div>
+          <h3 class="text-3xl font-bold text-gray-800">Arizona State University</h3>
+          <p class="text-xl text-gray-700 mt-2">B.S. in Computer Science</p>
+          <p class="text-lg text-gray-600 mt-2">Tempe AZ</p>
+        </div>
+
+        <div class="text-left md:text-right">
+          <p class="text-xl font-semibold text-gray-800">August 2022 – May 2026</p>
+          <p class="text-lg text-gray-700 mt-2">GPA: 3.98 / 4.0</p>
+        </div>
+      </div>
+
+      <div class="mt-8">
+        <h4 class="text-2xl font-semibold text-gray-800 mb-4">Relevant Coursework</h4>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          Operating Systems, Principles of Mobile App Development, Software QA and Testing,
+          Distributed Software Development, Foundations of Data Visualization, Data Structures 
+          and Algorithms, Principles of Programming Languages, CS Capstone Project 
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills (8 Cards) -->
+  <section id="skills" class="py-24 px-8 text-center">
+    <h2 class="text-6xl font-bold mb-12 text-gray-800">Technical Skills</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 max-w-6xl mx-auto">
+      <!-- Card 1: Java -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all">
+        <img src="java.svg" alt="Java" class="w-16 h-16 mx-auto"/>
+        <p class="mt-4 text-xl font-semibold text-gray-700">Java</p>
+      </div>
+      <!-- Card 2: Python -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all">
+        <img src="python.svg" alt="Python" class="w-16 h-16 mx-auto"/>
+        <p class="mt-4 text-xl font-semibold text-gray-700">Python</p>
+      </div>
+      <!-- Card 3: JavaScript -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all">
+        <img src="javascript.svg" alt="JavaScript" class="w-16 h-16 mx-auto"/>
+        <p class="mt-4 text-xl font-semibold text-gray-700">JavaScript</p>
+      </div>
+      <!-- Card 4: C++ -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all">
+        <img src="c++.svg" alt="C++" class="w-16 h-16 mx-auto"/>
+        <p class="mt-4 text-xl font-semibold text-gray-700">C++</p>
+      </div>
+      <!-- Card 5: Swift -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all">
+        <img src="swift.svg" alt="Swift" class="w-16 h-16 mx-auto"/>
+        <p class="mt-4 text-xl font-semibold text-gray-700">Swift</p>
+      </div>
+      <!-- Card 6: SQL -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all">
+        <img src="sql.svg" alt="SQL" class="w-16 h-16 mx-auto"/>
+        <p class="mt-4 text-xl font-semibold text-gray-700">SQL</p>
+      </div>
+      <!-- Card 7: C# -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all">
+        <img src="csharp.svg" alt="C#" class="w-16 h-16 mx-auto"/>
+        <p class="mt-4 text-xl font-semibold text-gray-700">C#</p>
+      </div>
+      <!-- Card 8: Firebase -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all">
+        <img src="firebase.svg" alt="Firebase" class="w-16 h-16 mx-auto"/>
+        <p class="mt-4 text-xl font-semibold text-gray-700">Firebase</p>
+      
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-24 px-8 text-center">
+    <h2 class="text-6xl font-bold mb-12 text-gray-800">Projects</h2>
+
+    <div class="grid xl:grid-cols-4 md:grid-cols-2 gap-6 max-w-7xl mx-auto items-stretch">
+
+      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all text-left h-full flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-semibold mb-3 text-blue-700">CPQE - AI Educational Resource Recommendation Engine</h3>
+          <p class="text-base text-gray-700">
+            Built an AI-powered recommendation system that helps bilingual families discover personalized educational resources.
+          </p>
+        </div>
+        <div class="mt-4">
+          <p class="font-medium text-gray-800 mb-4">Python • AI Systems • Data Processing</p>
+          <div class="flex items-center gap-4 flex-wrap">
+            <button onclick="openModal('cpqe-modal')" 
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition">
+            Read More
+            </button>
+            <a href="https://github.com/vatsallk/Colorado-Parents-for-Quality-Education" 
+            target="_blank" 
+            class="text-blue-600 underline text-sm font-medium hover:text-blue-800">
+            GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all text-left h-full flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-semibold mb-3 text-blue-700">BrainDump.AI - AI Stress to Success Hub</h3>
+          <p class="text-base text-gray-700">
+            Created a hackathon AI app that turns student stress dumps into action steps, wellness resets, and trend-aware support.
+          </p>
+        </div>
+        <div class="mt-4">
+          <p class="font-medium text-gray-800 mb-4">JavaScript • AI APIs • Prompting • Supermemory</p>
+          <div class="flex items-center gap-4 flex-wrap">
+            <button onclick="openModal('braindump-modal')" 
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition">
+            Read More
+            </button>
+            <a href="https://github.com/saanvi1906/BrainDump.AI" 
+            target="_blank" 
+            class="text-blue-600 underline text-sm font-medium hover:text-blue-800">
+            GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all text-left h-full flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-semibold mb-3 text-blue-700">Tracking Global Renewable Energy Growth</h3>
+          <p class="text-base text-gray-700">
+            Built an interactive D3.js visualization platform exploring renewable energy adoption across 200+ countries.
+          </p>
+        </div>
+        <div class="mt-4">
+          <p class="font-medium text-gray-800 mb-4">D3.js • JavaScript • TopoJSON • Data Visualization</p>
+          <div class="flex items-center gap-4 flex-wrap">
+            <button onclick="openModal('dataviz-modal')" 
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition">
+            Read More
+            </button>
+            <a href="https://github.com/asu-cse478-f2025/Colton-Devianshi-Maharshi-Saanvi-Shristi"
+            target="_blank" 
+            class="text-blue-600 underline text-sm font-medium hover:text-blue-800">
+            GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all text-left h-full flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-semibold mb-3 text-blue-700">ASU Chirp - Social Media App</h3>
+          <p class="text-base text-gray-700">
+            Developed a SwiftUI social app with Firebase authentication and real-time Firestore synchronization.
+          </p>
+        </div>
+        <div class="mt-4">
+          <p class="font-medium text-gray-800 mb-4">SwiftUI • Firebase • Firestore • MVVM</p>
+          <div class="flex items-center gap-4 flex-wrap">
+            <button onclick="openModal('chirp-modal')" 
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition">
+            Read More
+            </button>
+            <a href="https://github.com/smit4372/ASUChirp"
+            target="_blank" 
+            class="text-blue-600 underline text-sm font-medium hover:text-blue-800">
+            GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all text-left h-full flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-semibold mb-3 text-blue-700">Real-Time Event Notification System</h3>
+          <p class="text-base text-gray-700">
+            Engineered a backend service using WebSockets and REST APIs to deliver real-time notifications.
+          </p>
+        </div>
+        <div class="mt-4">
+          <p class="font-medium text-gray-800 mb-4">Java • WebSockets • REST APIs</p>
+            <button onclick="openModal('notification-modal')" 
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition">
+            Read More
+            </button>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all text-left h-full flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-semibold mb-3 text-blue-700">Heart Health Imaging & Monitoring System</h3>
+          <p class="text-base text-gray-700">
+            Designed a JavaFX patient record system for managing CT scan data and medical record workflows.
+          </p>
+        </div>
+        <div class="mt-4">
+          <p class="font-medium text-gray-800 mb-4">Java • JavaFX • UML Design</p>
+            <button onclick="openModal('hearthealth-modal')" 
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition">
+            Read More
+            </button>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all text-left h-full flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-semibold mb-3 text-blue-700">Contact Management System</h3>
+          <p class="text-base text-gray-700">
+            Built a Python desktop application with CRUD functionality, search, and SQLite-backed storage.
+          </p>
+        </div>
+        <div class="mt-4">
+          <p class="font-medium text-gray-800 mb-4">Python • SQLite • Tkinter</p>
+            <button onclick="openModal('contact-modal')" 
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition">
+            Read More
+            </button>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all text-left h-full flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-semibold mb-3 text-blue-700">Shortest Path Navigation Engine</h3>
+          <p class="text-base text-gray-700">
+            Developed a C++ graph-based navigation engine using adjacency lists, min-heaps, and shortest path logic.
+          </p>
+        </div>
+        <div class="mt-4">
+          <p class="font-medium text-gray-800 mb-4">C++ • Graph Algorithms • Min-Heap</p>
+            <button onclick="openModal('shortestpath-modal')" 
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition">
+            Read More
+            </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Project Modals -->
+  <div id="cpqe-modal" class="project-modal hidden">
+    <div class="project-modal-content">
+      <span class="close-modal" onclick="closeModal('cpqe-modal')">&times;</span>
+      <h3>CPQE - AI Educational Resource Recommendation Engine</h3>
+      <p><strong>Problem:</strong> Many bilingual families struggle to quickly find educational resources that match a child’s grade level, learning needs, and language preferences. Most platforms require too much manual searching and filtering.</p>
+      <p><strong>What I Built:</strong> I helped build an AI-powered recommendation engine that generates personalized educational resource suggestions for families based on contextual inputs and learning goals.</p>
+      <p><strong>My Contributions:</strong> I developed backend logic to process user inputs, filter relevant educational content, and rank resources based on student needs and contextual educational data.</p>
+      <p><strong>Why It Matters:</strong> This project focused on turning a large and complex educational resource space into something more accessible, useful, and practical for real families.</p>
+      <p><strong>Technologies:</strong> Python, AI Systems, Data Processing</p>
+    </div>
+  </div>
+
+  <div id="braindump-modal" class="project-modal hidden">
+    <div class="project-modal-content">
+      <span class="close-modal" onclick="closeModal('braindump-modal')">&times;</span>
+      <h3>BrainDump.AI - AI Stress to Success Hub</h3>
+      <p><strong>Problem:</strong> Students constantly deal with exams, deadlines, internship pressure, and personal stress, but most tools either store notes passively or fail to give immediate, actionable support.</p>
+      <p><strong>What I Built:</strong> BrainDump.AI is an AI-powered web app that transforms typed or spoken stress dumps into four useful outputs: an action plan, a wellness reset tip, a motivation boost, and a stress score from 0.0–1.0.</p>
+      <p><strong>Key Features:</strong> The MVP supports typed and voice-based input, returns structured AI outputs designed for frontend display, and includes a mood dashboard that visualizes stress levels over time using color-coded blobs from green to red.</p>
+      <p><strong>Memory Integration:</strong> Using Supermemory, each stress dump and AI response is stored and retrieved across sessions so the system can identify recurring stress patterns and provide more personalized, trend-aware suggestions over time.</p>
+      <p><strong>Example Output:</strong> For a student input like “I’m drowning in assignments and don’t know where to start,” the app can return 2–4 concrete next steps, a one-line wellness reset, an encouraging reframe, and a high stress score such as 0.83.</p>
+      <p><strong>Why It Stood Out:</strong> This project combined productivity, wellness, memory, and AI into one product experience, turning emotional overload into clarity and immediate action instead of just storing text.</p>
+      <p><strong>Technologies:</strong> JavaScript, AI APIs, Prompt Engineering, Voice Input, Supermemory</p>
+    </div>
+  </div>
+
+  <div id="dataviz-modal" class="project-modal hidden">
+    <div class="project-modal-content">
+      <span class="close-modal" onclick="closeModal('dataviz-modal')">&times;</span>
+      <h3>Tracking Global Renewable Energy Growth</h3>
+      <p><strong>Problem:</strong> Global energy datasets are large and difficult to interpret, making it hard to compare renewable energy adoption across countries, time periods, and energy sources.</p>
+      <p><strong>What I Built:</strong> I helped build an interactive data visualization platform exploring renewable energy growth across <strong>200+ countries</strong> from <strong>1990 to 2023</strong> using real-world energy data.</p>
+      <p><strong>Visualizations Implemented:</strong> The platform includes a choropleth world map, a multi-country line chart, a stacked area chart, a diverging bar chart, a scatter plot, and radial flower glyphs to analyze energy composition and adoption trends.</p>
+      <p><strong>Data & Technical Work:</strong> We used the Our World in Data energy dataset and TopoJSON for geographic rendering, then built the interface with D3.js, vanilla JavaScript, and CSS to allow users to switch between visual views and explore patterns interactively.</p>
+      <p><strong>Why It Matters:</strong> The project makes long-term renewable energy trends easier to understand by turning raw energy data into interactive visual stories that support comparison, exploration, and analysis.</p>
+      <p><strong>Technologies:</strong> D3.js, JavaScript, TopoJSON, CSS, Data Visualization</p>
+    </div>
+  </div>
+
+  <div id="chirp-modal" class="project-modal hidden">
+    <div class="project-modal-content">
+      <span class="close-modal" onclick="closeModal('chirp-modal')">&times;</span>
+      <h3>ASU Chirp - Social Media App</h3>
+      <p><strong>Problem:</strong> Students often need a simple, campus-focused space to share updates, posts, and events without the noise of larger general-purpose social platforms.</p>
+      <p><strong>What I Built:</strong> I developed a SwiftUI social media app that allows students to authenticate, create posts, view updates, and interact through a real-time Firebase-backed experience.</p>
+      <p><strong>My Contributions:</strong> I implemented Firebase Authentication, Firestore synchronization, and the MVVM architecture to improve state handling, responsiveness, and scalability throughout the app.</p>
+      <p><strong>Why It Matters:</strong> This project strengthened my mobile development skills while also teaching me how to integrate cloud-backed authentication, real-time data updates, and clean architectural patterns into a user-facing application.</p>
+      <p><strong>Technologies:</strong> SwiftUI, Firebase, Firestore, MVVM</p>
+    </div>
+  </div>
+
+  <div id="notification-modal" class="project-modal hidden">
+    <div class="project-modal-content">
+      <span class="close-modal" onclick="closeModal('notification-modal')">&times;</span>
+      <h3>Real-Time Event Notification System</h3>
+      <p><strong>Problem:</strong> Many systems still rely on repeated polling, which increases latency and creates unnecessary overhead when users need timely updates.</p>
+      <p><strong>What I Built:</strong> I engineered a backend service that delivers real-time notifications to subscribed users using WebSocket connections and REST APIs.</p>
+      <p><strong>Core Work:</strong> I designed APIs for event publishing and subscription management, then implemented real-time delivery logic supported by caching to improve responsiveness during concurrent event handling.</p>
+      <p><strong>Why It Matters:</strong> This project demonstrates backend systems thinking around real-time communication, lower-latency delivery, and efficient event-driven interaction patterns.</p>
+      <p><strong>Technologies:</strong> Java, WebSockets, REST APIs</p>
+    </div>
+  </div>
+
+  <div id="hearthealth-modal" class="project-modal hidden">
+    <div class="project-modal-content">
+      <span class="close-modal" onclick="closeModal('hearthealth-modal')">&times;</span>
+      <h3>Heart Health Imaging &amp; Monitoring System</h3>
+      <p><strong>Problem:</strong> Managing patient imaging records and medical monitoring details efficiently is difficult when information is fragmented across disconnected workflows.</p>
+      <p><strong>What I Built:</strong> I designed a JavaFX-based patient record system for managing CT scan data, diagnostic details, and medical record workflows.</p>
+      <p><strong>Core Work:</strong> I used UML use-case diagrams, CRC models, and object-oriented design principles to structure the system, then built interfaces and retrieval workflows to improve usability and data access.</p>
+      <p><strong>Impact:</strong> The UI design reduced data entry errors by <strong>25%</strong> in the CT scan tracking workflow while improving the overall reliability of patient record retrieval.</p>
+      <p><strong>Technologies:</strong> Java, JavaFX, UML Design</p>
+    </div>
+  </div>
+
+  <div id="contact-modal" class="project-modal hidden">
+    <div class="project-modal-content">
+      <span class="close-modal" onclick="closeModal('contact-modal')">&times;</span>
+      <h3>Contact Management System</h3>
+      <p><strong>Problem:</strong> Manually organizing and updating large contact lists is inefficient and often lacks fast search, persistent storage, and simple editing workflows.</p>
+      <p><strong>What I Built:</strong> I built a Python desktop application with full CRUD functionality, search, and SQLite-backed storage for managing contact records more efficiently.</p>
+      <p><strong>Core Work:</strong> I developed the interface in Tkinter, implemented persistent database operations with SQLite, and added search and filtering functionality to make retrieval faster and more user-friendly.</p>
+      <p><strong>Why It Matters:</strong> This project strengthened my understanding of desktop application design, data persistence, and building practical tools around structured data management.</p>
+      <p><strong>Technologies:</strong> Python, SQLite, Tkinter</p>
+    </div>
+  </div>
+
+  <div id="shortestpath-modal" class="project-modal hidden">
+    <div class="project-modal-content">
+      <span class="close-modal" onclick="closeModal('shortestpath-modal')">&times;</span>
+      <h3>Shortest Path Navigation Engine</h3>
+      <p><strong>Problem:</strong> Navigation and routing systems require efficient shortest path computation over graph-based networks, especially when the graph structure is large and dynamic.</p>
+      <p><strong>What I Built:</strong> I developed a C++ graph-based navigation engine that computes shortest paths using adjacency lists, min-heaps, and shortest path logic.</p>
+      <p><strong>Core Work:</strong> I implemented graph-processing functionality using adjacency lists, stacks, and heap-based priority queue logic, then built command-driven support for loading graphs, processing route queries, and printing outputs.</p>
+      <p><strong>Why It Matters:</strong> This project gave me hands-on experience with graph algorithms, data structures, and performance-oriented systems thinking in C++.</p>
+      <p><strong>Technologies:</strong> C++, Graph Algorithms, Min-Heap</p>
+    </div>
+  </div>
+
+<!-- Work Experience Section -->
+<section id="experience" class="py-28 px-8">
+  <h2 class="text-7xl font-bold text-center mb-16 text-gray-800">
+    Work Experience
+  </h2>
+
+  <div class="max-w-5xl mx-auto space-y-12">
+
+    <!-- GSK -->
+    <div class="bg-white rounded-3xl shadow-2xl p-10 md:p-14">
+      <h3 class="text-4xl font-bold text-gray-800 mb-2">
+        Software Development Intern
+      </h3>
+
+      <p class="text-2xl text-blue-600 font-semibold mb-1">
+        GlaxoSmithKline (GSK) - Durham, North Carolina
+      </p>
+
+      <p class="text-lg text-gray-500 mb-6">
+        May 2025 - Aug 2025
+      </p>
+
+      <p class="text-xl text-gray-700 leading-relaxed mb-6">
+        Built a centralized monitoring platform that replaced fragmented compliance tools
+        with a single scalable dashboard, significantly improving operational efficiency
+        and enabling faster decision-making across teams.
+      </p>
+
+      <ul class="text-lg text-gray-700 space-y-3 mb-6">
+        <li>• Reduced manual workflows by <span class="font-semibold">70%</span></li>
+        <li>• Improved response time by <span class="font-semibold">50%</span></li>
+        <li>• Optimized SQL query performance by <span class="font-semibold">35%</span></li>
+      </ul>
+
+      <button onclick="openModal('gskModal')" class="text-blue-600 text-lg font-semibold hover:underline">
+        Read More →
+      </button>
+    </div>
+
+    <!-- ASU -->
+    <div class="bg-white rounded-3xl shadow-2xl p-10 md:p-14">
+      <h3 class="text-4xl font-bold text-gray-800 mb-2">
+        Administrative Assistant (Data & Operations)
+      </h3>
+
+      <p class="text-2xl text-blue-600 font-semibold mb-1">
+        Arizona State University
+      </p>
+
+      <p class="text-lg text-gray-500 mb-6">
+        May 2023 – May 2026
+      </p>
+
+      <p class="text-xl text-gray-700 leading-relaxed mb-6">
+        Developed data-driven workflows using Python and SQL to automate reconciliation,
+        improve data accuracy, and streamline financial operations across large-scale research systems.
+      </p>
+
+      <ul class="text-lg text-gray-700 space-y-3 mb-6">
+        <li>• Built automation using <span class="font-semibold">Python + SQL</span> for data reconciliation</li>
+        <li>• Reduced data inconsistencies by <span class="font-semibold">25%</span> through validation workflows</li>
+        <li>• Processed and validated <span class="font-semibold">1,000+</span> records using SQL-based pipelines</li>
+      </ul>
+
+      <button onclick="openModal('asuModal')" class="text-blue-600 text-lg font-semibold hover:underline">
+        Read More →
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- GSK Modal -->
+<div id="gskModal" class="modal hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center px-4">
+  <div class="bg-white p-8 md:p-10 rounded-3xl max-w-2xl w-full relative shadow-2xl max-h-[90vh] overflow-y-auto">
+    <span onclick="closeModal('gskModal')" class="absolute top-4 right-6 text-3xl cursor-pointer">&times;</span>
+
+    <h3 class="text-3xl font-bold mb-2">Software Development Intern</h3>
+    <p class="text-blue-600 font-semibold mb-1">GlaxoSmithKline (GSK) - Durham, North Carolina</p>
+    <p class="text-gray-500 mb-6">May 2025 - Aug 2025</p>
+
+    <ul class="text-lg text-gray-700 space-y-3">
+      <li>• Built a centralized monitoring platform in <span class="font-semibold">C# WinForms</span> to unify 12+ fragmented compliance workflows</li>
+      <li>• Designed reusable workflow and backend logic to support multiple monitor types without duplicating code</li>
+      <li>• Automated validation and decision paths, reducing manual analyst effort by <span class="font-semibold">70%</span></li>
+      <li>• Improved operational response time by <span class="font-semibold">50%</span> through streamlined workflows and UI interactions</li>
+      <li>• Optimized SQL queries and data handling, improving system performance by <span class="font-semibold">35%</span></li>
+      <li>• Built scalable patterns that allowed new monitors and business rules to be added easily</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ASU Modal -->
+<div id="asuModal" class="modal hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center px-4">
+  <div class="bg-white p-8 md:p-10 rounded-3xl max-w-2xl w-full relative shadow-2xl max-h-[90vh] overflow-y-auto">
+    <span onclick="closeModal('asuModal')" class="absolute top-4 right-6 text-3xl cursor-pointer">&times;</span>
+
+    <h3 class="text-3xl font-bold mb-2">Administrative Assistant (Data & Operations)</h3>
+    <p class="text-blue-600 font-semibold mb-1">Arizona State University</p>
+    <p class="text-gray-500 mb-6">May 2023 – May 2026</p>
+
+    <ul class="text-lg text-gray-700 space-y-3">
+      <li>• Built <span class="font-semibold">Python automation scripts</span> to streamline reconciliation and eliminate repetitive manual workflows</li>
+      <li>• Wrote and optimized <span class="font-semibold">SQL queries</span> to validate, clean, and cross-check structured datasets across systems</li>
+      <li>• Designed data validation workflows that reduced inconsistencies and reporting errors by <span class="font-semibold">25%</span></li>
+      <li>• Processed and validated <span class="font-semibold">1,000+</span> records using SQL-based reconciliation pipelines and verification logic</li>
+      <li>• Identified and resolved discrepancies involving <span class="font-semibold">$1.8M</span> through structured data analysis</li>
+      <li>• Improved reliability and efficiency of data workflows supporting <span class="font-semibold">$70M+</span> in research funding systems</li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- Extracurricular Section -->
+<section id="extracurricular" class="py-28 px-8">
+  <h2 class="text-7xl font-bold text-center mb-16 text-gray-800">
+    Extracurricular & Volunteer Experience
+  </h2>
+
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+
+    <div class="bg-white/90 backdrop-blur-sm rounded-3xl shadow-lg p-8 border border-white/60 bg-white">
+      <p class="text-sm font-semibold text-blue-600 mb-3">Nov 2024 – Present</p>
+      <h3 class="text-2xl font-bold text-gray-800 mb-3">Rewriting the Code (RTC)</h3>
+      <p class="text-lg text-gray-600 leading-relaxed">
+        Engaged in a national community supporting women in tech through mentorship and career development.
+      </p>
+    </div>
+
+    <div class="bg-white/90 backdrop-blur-sm rounded-3xl shadow-lg p-8 border border-white/60 bg-white">
+      <p class="text-sm font-semibold text-blue-600 mb-3">May 2025 – Aug 2025</p>
+      <h3 class="text-2xl font-bold text-gray-800 mb-3">CodePath: Technical Interview Prep (Advanced)</h3>
+      <p class="text-lg text-gray-600 leading-relaxed">
+        Completed advanced training in data structures, algorithms, and interview-style problem solving.
+      </p>
+    </div>
+
+    <div class="bg-white/90 backdrop-blur-sm rounded-3xl shadow-lg p-8 border border-white/60 bg-white">
+      <p class="text-sm font-semibold text-blue-600 mb-3">Jan 2025 – May 2026</p>
+      <h3 class="text-2xl font-bold text-gray-800 mb-3">American Association for the Advancement of Science (AAAS)</h3>
+      <p class="text-lg text-gray-600 leading-relaxed">
+        Participated in programs focused on scientific research, innovation, and interdisciplinary collaboration.
+      </p>
+    </div>
+
+    <div class="bg-white/90 backdrop-blur-sm rounded-3xl shadow-lg p-8 border border-white/60 bg-white">
+      <p class="text-sm font-semibold text-blue-600 mb-3">May 2023 – Dec 2024</p>
+      <h3 class="text-2xl font-bold text-gray-800 mb-3">Marketing Coordinator, Connecting International Communities</h3>
+      <p class="text-lg text-gray-600 leading-relaxed">
+        Led outreach initiatives to connect diverse communities and improve engagement and participation.
+      </p>
+    </div>
+
+    <div class="md:col-span-2 bg-white/90 backdrop-blur-sm rounded-3xl shadow-lg p-8 border border-white/60 bg-white">
+      <p class="text-sm font-semibold text-blue-600 mb-3">May 2023 – Sept 2024</p>
+      <h3 class="text-2xl font-bold text-gray-800 mb-3">National Society of Leadership and Success (NSLS)</h3>
+      <p class="text-lg text-gray-600 leading-relaxed">
+        Completed leadership training focused on goal setting, communication, and professional development.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-28 px-8">
+  <h2 class="text-7xl font-bold text-center mb-12 text-gray-800">
+    Contact Me
+  </h2>
+
+  <div class="max-w-3xl mx-auto text-center">
+
+    <p class="text-xl text-gray-600 mb-10 leading-relaxed">
+      I am always open to opportunities, collaborations, and conversations.
+          Feel free to reach out. I would love to connect!
+    </p>
+
+    <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+
+      <!-- Email -->
+      <a href="mailto:saanvip19.cs@gmail.com" 
+         class="border border-gray-300 px-8 py-4 rounded-2xl text-lg font-semibold shadow-md hover:bg-blue-700 transition">
+        Email Me
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="http://www.linkedin.com/in/saanvi-patel-a830862b0" target="_blank"
+         class="border border-gray-300 px-8 py-4 rounded-2xl text-lg font-semibold shadow-md hover:bg-blue-700 transition">
+        LinkedIn
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/saanvi1906" target="_blank"
+         class="border border-gray-300 px-8 py-4 rounded-2xl text-lg font-semibold shadow-md hover:bg-blue-700 transition">
+        GitHub
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="py-8 text-center">
+    <p class="text-xl text-gray-600">&copy; 2026 Saanvi Patel. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
